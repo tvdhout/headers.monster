@@ -8,4 +8,6 @@ As a result, all the previously added headers are removed in the browser, but no
 
 The results on [securityheaders.com](https://securityheaders.com/?q=headers.monster&followRedirects=on) are correct, because they do not use CURL but some automated browser agent (like selenium).
 
+Without the if-block all headers from the top of the configuration are added in the response as expected.
+
 This can lead to developers thinking they have everything set up correctly, while this is not the case.
