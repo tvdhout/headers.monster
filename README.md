@@ -1,4 +1,4 @@
-# Security headers glitch in Nginx
+# Security headers glitch in Nginx: website: [headers.monster](https://www.headers.monster)
 
 This repository includes a simple [nginx configuration](nginx/nginx.conf) which adds security headers by default.
 
