@@ -1,6 +1,6 @@
 # Security headers bug in Nginx: [headers.monster](https://www.headers.monster)
 
-This repository includes a simple [nginx configuration](nginx/nginx.conf) which adds security headers by default.
+This repository includes a simple [nginx configuration](nginx/nginx.conf) which adds security headers by default. Website: [headers.monster](https://www.headers.monster)
 
 In the location block [I include an if-statement](https://github.com/tvdhout/headers.monsters/blob/f10931d03dcca7b84de8d3d4f01f1868468749aa/nginx/nginx.conf#L92) which adds additional headers if the request is a GET request. 
 
