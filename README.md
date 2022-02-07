@@ -4,7 +4,7 @@ This repository includes a simple [nginx configuration](nginx/nginx.conf) which 
 
 In the location block [I include an if-statement](https://github.com/tvdhout/headers.monsters/blob/f10931d03dcca7b84de8d3d4f01f1868468749aa/nginx/nginx.conf#L92) which adds additional headers if the request is a GET request. 
 
-As a result, all the previously added headers are removed in the browser (GET), but not in CURL (HEAD) (see `curl -LI headers.monster`). This results in the website [scoring 100%](https://internet.nl/site/headers.monster/1489677/) on internet.nl (using CURL), while in reality it does include the security headers.
+As a result, all the previously added headers are removed in the browser (GET), but not in CURL (-I will make a HEAD request) (see `curl -LI headers.monster`). This results in the website [scoring 100%](https://internet.nl/site/headers.monster/1489677/) on internet.nl (using CURL), while in reality it does include the security headers.
 
 The results on [securityheaders.com](https://securityheaders.com/?q=headers.monster&followRedirects=on) are correct, because they do not use CURL but some automated browser agent (like selenium).
 
